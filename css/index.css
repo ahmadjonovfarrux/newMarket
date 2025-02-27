@@ -95,12 +95,12 @@ a {
 }
 .hero__container {
   display: grid;
-  grid-template-columns: repeat(4, 320px);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 25px;
 }
 
 .card {
-  width: 320px;
+  width: 330px;
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -132,13 +132,6 @@ a {
   height: 24px;
 }
 
-@media (max-width: 1370px) {
-  .hero__container {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 25px;
-  }
-}
 /* The end of the main styles */
 
 /* Footer */

@@ -31,17 +31,27 @@
 
 const url = "https://dummyjson.com/product";
 const div = document.querySelector(".hero__container");
+// const imageIcon = "././images/add-shop-bag.png";
 
 function showData({ products }) {
   products.forEach((product) => {
+    // Card
     const card = document.createElement("div");
     card.classList.add("card");
+    // h2
     const h2 = document.createElement("h2");
     h2.classList.add("card__title");
+    // desc
     const description = document.createElement("p");
     description.classList.add("card__description");
+    // price
     const price = document.createElement("h4");
+    price.classList.add("card__price");
+    // cardImage
     const image = document.createElement("img");
+    image.classList.add("card__img");
+    // const cardBox = document.createElement("div");
+    // cardBox.classList.add("card__box");
     h2.textContent = product.title;
     price.textContent = `Price:${product.price}$`;
     description.textContent = product.description;

@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NewMarket</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css"
+    />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
+    <div class="loaderWrapper hidden">
+      <span class="loader"></span>
+    </div>
     <!-- Header -->
     <header class="header">
       <div class="header__container container">
@@ -45,11 +52,31 @@
     <main class="main">
       <section class="hero">
         <div class="hero__mainContainer container">
-          
+          <div class="title__box">
+            <h1 class="hero__mainContainer__title">Welcome to our NewMarket</h1>
+            <p class="hero__mainContainer__description">
+              Discover a world of premium beauty products tailored for every
+              skin type and style. From skincare essentials to luxurious makeup,
+              we bring you the best brands at unbeatable prices.
+            </p>
+          </div>
+          <ul class="hero__mainContainer__list">
+            <li class="hero__mainContainer__item bold">Why Shop With Us?</li>
+            <li class="hero__mainContainer__item">
+              High-quality, authentic products
+              <i class="fi fi-br-check iconOfList"></i>
+            </li>
+            <li class="hero__mainContainer__item">
+              Exclusive discounts & offers
+              <i class="fi fi-br-check"></i>
+            </li>
+            <li class="hero__mainContainer__item">
+              Fast and reliable delivery
+              <i class="fi fi-br-check"></i>
+            </li>
+          </ul>
         </div>
-        <div class="hero__container container">
-         
-        </div>
+        <div class="hero__container container"></div>
       </section>
     </main>
     <!-- The end of the main -->
@@ -123,6 +150,6 @@
       </div>
     </footer>
 
-    <script src="./js/index.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>

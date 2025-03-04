@@ -236,7 +236,7 @@ a {
 }
 
 .card {
-  width: 400px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   padding: 15px;

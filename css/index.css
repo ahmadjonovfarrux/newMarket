@@ -231,12 +231,12 @@ a {
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 25px;
 }
 
 .card {
-  width: 400px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   padding: 15px;
